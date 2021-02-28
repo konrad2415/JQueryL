@@ -7,14 +7,36 @@
     <script src="js/jquery.min-v3.5.1.js" ></script>
 </head>
 <body>
-    
+    <button id="bt1" class="T2">Click bt1!</button>
+    <br/>
+    <button id="bt2" class="T2">Click bt2!</button>
+    <br/>
+    <br/>
+    <button id="bt3" class="T2">Click to clear()!</button>
+    <br/>
+    <br/>
+    <div id="content"></div>
 </body>
 </html>
 
 
 <script type="text/javascript">
   $(document).ready(function(){
-      alert('Hola JQuery');
-  })
+     // --- Modify the text Property on the div with the id "content"  when the button bt2 is clicked
+     $('#bt1').click(function(){
+         alert("Hi JQuery, I'm a live!!");
+     });
+
+    
+     // --- Modify the text Property on the div with the id "content"  when the button bt2 is clicked
+     $('#bt2').click(function(){
+        $('#content').text('Text added by trigering the click.');
+     });
+
+     // --- Modify the text property on the div to clear its content to NULL
+     $('#bt3').click(function(){
+         $('#content').text('');
+     });
+  });
 
 </script>
