@@ -13,8 +13,8 @@
   	  $('#clearDiv').click(function(){
   	  	  $('#content').text('');
   	  });
-    
   	  var c = 0;
+  	  $('#count').text(0);
   	  
   	  $('#add').click(function(){
   	  	  $('#count').text(++c);
@@ -26,6 +26,7 @@
   	  
   	  
   	  $('#countAlert').click(function(){
+  	  	 // Use ternary Operator as an advanced topic to test on Js
   	    	(($('#count').text())=== '0') ?alert( ' Nothing to be showed '): alert("CounterStats:  "+$('#count').text());
   	  	
   	  });
