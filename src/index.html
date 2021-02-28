@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/jquery.min-v3.5.1.js" ></script>
+    
 </head>
 <body>
     <button id="bt1" class="T2">Click bt1!</button>
@@ -16,27 +17,7 @@
     <br/>
     <br/>
     <div id="content"></div>
+
+    <script src="js/app.js"></script>  
 </body>
 </html>
-
-
-<script type="text/javascript">
-  $(document).ready(function(){
-     // --- Modify the text Property on the div with the id "content"  when the button bt2 is clicked
-     $('#bt1').click(function(){
-         alert("Hi JQuery, I'm a live!!");
-     });
-
-    
-     // --- Modify the text Property on the div with the id "content"  when the button bt2 is clicked
-     $('#bt2').click(function(){
-        $('#content').text('Text added by trigering the click.');
-     });
-
-     // --- Modify the text property on the div to clear its content to NULL
-     $('#bt3').click(function(){
-         $('#content').text('');
-     });
-  });
-
-</script>
