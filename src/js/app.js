@@ -1,5 +1,7 @@
   $('document').ready(function(){ // -- This is the JQuery wrapper to the active code
-
+  
+     // --- Initialise el valor del campo de texto
+     $('#someData').val('Campo de texto');
   	 // --- Use a # selector to bind a click event to thee button with id="bt1" to run an Alert
   	  $('#bt1').click(function(){
   	  	 alert("Here I'm a live!!");
@@ -29,5 +31,16 @@
   	  	 // Use ternary Operator as an advanced topic to test on Js
   	    	(($('#count').text())=== '0') ?alert( ' Nothing to be showed '): alert("CounterStats:  "+$('#count').text());
   	  	
-  	  });
+        });
+        
+
+    // --- Handling input text
+    $('#valLoader').click(function(){
+        alert($('#someData').val());
+    });
+
+    $('#altSelected').click(function(){
+        alert($('#sel').val());
+    });
+
   });
