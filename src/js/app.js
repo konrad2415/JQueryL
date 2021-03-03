@@ -43,4 +43,16 @@
         alert($('#sel').val());
     });
 
+
+	// --- Working with checkbox status
+	$('#inputA').click(function(){
+			  if($('#inputA').is(':checked')){
+				//alert('Button checked.');
+				$('#labelA').addClass('lineThrough');
+			  } 
+			  else {
+					   //alert('Control i unchecked.');
+					   $('#labelA').removeClass('lineThrough');
+					}
+	});
   });
